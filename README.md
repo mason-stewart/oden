@@ -12,7 +12,7 @@ Ever wish you could provide the iterator as the first argument to Underscore's `
 
 ### Why?
 
-If you spend a lot of time in Clojure, you'll get used to the threading macros (`->>` and `->`) that make function composition silky smooth. Underscore provides similar functionality with `_.compose`. The example from Underscore's docs is:
+If you spend a lot of time in [Clojure](http://clojure.org/), you'll get used to the threading macros ([`->>`](http://clojuredocs.org/clojure_core/clojure.core/-%3E%3E) and [`->`](http://clojuredocs.org/clojure_core/clojure.core/-%3E)) that make function composition silky smooth. Underscore provides similar functionality with `_.compose`. The [example](http://underscorejs.org/#compose) from Underscore's docs is:
 
 ```javascript
 var greet    = function(name){ return "hi: " + name; };
@@ -26,7 +26,7 @@ Seems cool, right?
 
 ### The Problem
 
-The above example *is* cool, but it gets less elegant when composing methods like `_.map` and `_.reject`. Partial application in JavaScript can be a little bit clunky when the collection to be iterated over is the first argument, rather than the second. Observe:
+The above example *is* cool, but it gets less elegant when composing methods like `_.map` and `_.reject`. Partial application can make this better, but partial application in JavaScript can be a little bit verbose. Observe:
 
 ```javascript
 // Just flat out composing these two methods is way gross.
@@ -39,7 +39,8 @@ _.reject(_.map([8.56, 9.63],
         });
 
 // Using _.compose plus partial application is better, 
-// but this is still undesirable,and gets heftier with deeply composed functions.
+// but this is still undesirable, and gets heftier 
+// with deeply composed functions.
 var mapSalesTax = function(){ 
   return function(coll){
     return _.map(coll, function(x) { return x * 1.07 })
@@ -81,7 +82,7 @@ And it gets even better in CoffeeScript:
 
 Or if you like LISP-y CoffeeScript:
 
-```cofeescript
+```coffeescript
 (ƒ.reject ((x) -> x > 10), (ƒ.map ((x) -> x * 1.07), [8, 9, 10, 11]))
 ```
 
@@ -96,6 +97,10 @@ Aside from the ten methods listed above, `ƒ.VERSION`, `ƒ._`, and `ƒ.noConflic
 ### Installation
 
 ?
+
+### Use
+
+On a Mac, you can type the `ƒ` character with <kbd>option</kbd>+<kbd>f</kbd>. I don't have a Windows machine, but according to the Internet™ the shortcut is <kbd>alt</kbd>+<kbd>159</kbd>. The identical `oden` object is available, too, of course.
 
 ### Contributing
 
