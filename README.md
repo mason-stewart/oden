@@ -104,9 +104,9 @@ For front end use:
 
 `bower install oden`
 
-or as a Node.js module:
+or as a Node.js module (note the trailing `.js` in the module name):
 
-`npm install oden`
+`npm install oden.js`
 
 After that require the module or load it via script tags and you're ready to go.
 
