@@ -42,7 +42,6 @@ _.reject(_.map([8.56, 9.63],
 
 // Using _.compose is better,  but this is still undesirable,
 // and gets heftier with deeply composed functions. 
-//
 // (N.B.: Partial application *could* be used here to allow the iterators 
 // to be defined on the fly, but that gets even messier.)
 var mapSalesTax = function(coll){
