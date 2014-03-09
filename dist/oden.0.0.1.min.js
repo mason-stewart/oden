@@ -1,4 +1,4 @@
-/*! oden - v0.0.1 - 2014-03-09
+/*! oden.js - v0.0.1 - 2014-03-09
 * https://github.com/masondesu/oden
 * Copyright (c) 2014 Mason Stewart; Licensed MIT */
 
