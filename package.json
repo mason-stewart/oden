@@ -1,0 +1,21 @@
+{
+  "name": "oden",
+  "version": "0.0.1",
+  "homepage": "https://github.com/masondesu/oden",
+  "author": {
+    "name": "Mason Stewart"
+  },
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "matchdep": "~0.1.2",
+    "grunt-mocha-test": "~0.7.0",
+    "chai": "~1.9.0"
+  }
+}
