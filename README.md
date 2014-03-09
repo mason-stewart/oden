@@ -2,6 +2,8 @@
 
 ## Accept iterators as the *first* argument on your favorite Underscore.js methods!
 
+!["This library is named after the wonderful, traditional Winter food that goes by the same name. Image credit: http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comfort-food-from-japan/"](http://www.nihonsun.com/wp-content/uploads/2008/11/image11.png)
+
 [![Build Status](https://secure.travis-ci.org/masondesu/oden.png?branch=master)](http://travis-ci.org/masondesu/oden)
 
 Ever wish you could provide the iterator as the first argument to Underscore's `map` method? Now you can with Oden.js. It's as easy as:
