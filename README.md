@@ -2,7 +2,7 @@
 
 ## Accept iterators as the *first* argument on your favorite Underscore.js methods!
 
-!["This library is named after the wonderful, traditional Winter food that goes by the same name. Image credit: http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comfort-food-from-japan/"](http://www.nihonsun.com/wp-content/uploads/2008/11/image11.png)
+!["Mmmmmmmmm.... Oden!"](http://www.nihonsun.com/wp-content/uploads/2008/11/image11.png)
 
 [![Build Status](https://secure.travis-ci.org/masondesu/oden.png?branch=master)](http://travis-ci.org/masondesu/oden)
 
@@ -107,6 +107,10 @@ On a Mac, you can type the `ƒ` character with <kbd>option</kbd>+<kbd>f</kbd>. I
 ### Contributing
 
 If you're not completely offended by this little library, please consider contributing. It's really an expirement, and only offers minimal syntactic improvements for a very niche issue. If you have an idea of how to actually make Oden.js useful, submit a pull request :sparkles:
+
+### BTW, what's the name mean?
+
+This library is named after the wonderful, traditional Japanese winter food that goes by the same name (おでん). Image credit: [Nihon Sun](http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comfort-food-from-japan/).
 
 ### License
 
