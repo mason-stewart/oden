@@ -1,4 +1,4 @@
-/*! oden.js - v0.0.1 - 2014-03-09
+/*! oden.js - v0.0.2 - 2014-03-09
 * https://github.com/masondesu/oden
 * Copyright (c) 2014 Mason Stewart; Licensed MIT */
 
@@ -76,7 +76,7 @@
 
   // make sure to overwrite any VERSION prop that was
   // slurped up from the host _
-  oden.VERSION = '0.0.1';
+  oden.VERSION = '0.0.2';
 
   // Refer to oden instead of _ internaly
   oden._ = oden;
