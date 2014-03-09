@@ -110,7 +110,9 @@ If you're not completely offended by this little library, please consider contri
 
 ### BTW, what's the name mean?
 
-This library is named after the wonderful, traditional Japanese winter food that goes by the same name (おでん). Image credit: [Nihon Sun](http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comfort-food-from-japan/).
+This library is named after the wonderful, traditional Japanese winter food that goes by the same name: おでん. 
+
+Image credit: [Nihon Sun](http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comfort-food-from-japan/).
 
 ### License
 
