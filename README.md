@@ -98,7 +98,17 @@ Aside from the ten methods listed above, `ƒ.VERSION`, `ƒ._`, and `ƒ.noConflic
 
 ### Installation
 
-?
+Oden should work fine in both Node.js and browsers. It supports AMD, Node-style module exports, and plain old in-browser globals. It's only dependency is Underscore.js (lodash coming soon!), so make sure you've loaded that first.
+
+For front end use:
+
+`bower install oden`
+
+or as a Node.js module:
+
+`npm install oden`
+
+After that require the module or load it via script tags and you're ready to go.
 
 ### Use
 
@@ -118,23 +128,4 @@ Image credit: [Nihon Sun](http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comf
 
 Oden.js is licensed under the The MIT License (MIT)
 
-Copyright (c) 2014 [Mason Stewart](https://twitter.com/masondesu)
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
+Copyright (c) 2014 [Mason Stewart](https://twitter.com/masondesu) See [LICENSE](https://github.com/masondesu/oden/blob/master/LICENSE) for more details.

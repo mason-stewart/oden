@@ -5,17 +5,29 @@
   "author": {
     "name": "Mason Stewart"
   },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/masondesu/oden/blob/master/LICENSE"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/masondesu/oden.git"
+  },
+  "main": "dist",
   "dependencies": {
     "underscore": "~1.6.0"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-jshint": "~0.7.0",
     "grunt-contrib-uglify": "~0.2.2",
     "grunt-contrib-concat": "~0.3.0",
     "grunt-contrib-watch": "~0.4.4",
     "matchdep": "~0.1.2",
     "grunt-mocha-test": "~0.7.0",
-    "chai": "~1.9.0"
+    "chai": "~1.9.0",
+    "jshint-stylish": "~0.1.5"
   }
 }

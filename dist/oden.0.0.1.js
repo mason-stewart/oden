@@ -1,3 +1,7 @@
+/*! oden - v0.0.1 - 2014-03-09
+* https://github.com/masondesu/oden
+* Copyright (c) 2014 Mason Stewart; Licensed MIT */
+
 //    ____     ______      _____      __      _  
 //   / __ \   (_  __ \    / ___/     /  \    / ) 
 //  / /  \ \    ) ) \ \  ( (__      / /\ \  / /  

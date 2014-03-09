@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '<%= pkg.homepage ? "* " + pkg.homepage + "\\n" : "" %>' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>;' +
-      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
+      ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n\n',
     // Task configuration.
     concat: {
       options: {
@@ -20,7 +20,7 @@ module.exports = function(grunt) {
       },
       dist: {
         src: ['lib/{,*/}*.js'],
-        dest: 'dist/<%= pkg.name %>.v<%= pkg.version %>.js'
+        dest: 'dist/<%= pkg.name %>.<%= pkg.version %>.js'
       }
     },
     uglify: {
@@ -29,11 +29,14 @@ module.exports = function(grunt) {
       },
       dist: {
         src: '<%= concat.dist.dest %>',
-        dest: 'dist/<%= pkg.name %>.v<%= pkg.version %>.min.js'
+        dest: 'dist/<%= pkg.name %>.<%= pkg.version %>.min.js'
       }
     },
     jshint: {
-      options: grunt.file.readJSON('.jshintrc'),
+      options: {
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-stylish')
+      },
       lib_test: {
         src: ['lib/{,*/}*.js']
       }

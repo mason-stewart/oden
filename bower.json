@@ -1,9 +1,21 @@
 {
   "name": "oden",
-  "version": "0.0.0",
-  "dependencies": {},
-  "devDependencies": {
-    
-  }
+  "version": "0.0.1",
+  "main": "dist",
+  "ignore": [
+    "lib",
+    "test",
+    ".bowerrc",
+    ".gitignore",
+    ".jshintignore",
+    ".jshintrc",
+    ".travis.yml",
+    "bower.json",
+    "Gruntfile.js",
+    "package.json"
+  ],
+  "dependencies": {
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {}
 }
-
