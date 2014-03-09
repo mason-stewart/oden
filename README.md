@@ -28,7 +28,7 @@ Seems cool, right?
 
 ### The Problem
 
-The above example *is* cool, but it gets less elegant when composing methods like `_.map` and `_.reject`. Partial application can make this better, but partial application in JavaScript can be a little bit verbose. Observe:
+The above example *is* cool, but it gets less elegant when composing methods like `_.map` and `_.reject`. Partial application and/or function wrapping can make this better, but partial either solution can be a little bit verbose. Observe:
 
 ```javascript
 // Just flat out composing these two methods is way gross.
@@ -40,22 +40,20 @@ _.reject(_.map([8.56, 9.63],
           return x > 10
         });
 
-// Using _.compose plus partial application is better, 
-// but this is still undesirable, and gets heftier 
-// with deeply composed functions.
-var mapSalesTax = function(){ 
-  return function(coll){
-    return _.map(coll, function(x) { return x * 1.07 })
-  }
+// Using _.compose is better,  but this is still undesirable,
+// and gets heftier with deeply composed functions. 
+//
+// (N.B.: Partial application *could* be used here to allow the iterators 
+// to be defined on the fly, but that gets even messier.)
+var mapSalesTax = function(coll){
+  return _.map(coll, function(x) { return x * 1.07 })
 };
 
-var rejectExpensiveItems = function(){ 
-  return function(coll){
-    return _.reject(coll, function(x) { return x > 10})
-  }
+var rejectExpensiveItems = function(coll){
+  return _.reject(coll, function(x) { return x > 10})
 };
 
-var affordableItems = _.compose(rejectExpensiveItems(), mapSalesTax());
+var affordableItems = _.compose(rejectExpensiveItems, mapSalesTax);
 affordableItems([8, 9, 10, 11]);
 // returns [8.56, 9.63]
 ```
@@ -98,7 +96,7 @@ Aside from the ten methods listed above, `ƒ.VERSION`, `ƒ._`, and `ƒ.noConflic
 
 ### Installation
 
-Oden should work fine in both Node.js and browsers. It supports AMD, Node-style module exports, and plain old in-browser globals. It's only dependency is Underscore.js (lodash coming soon!), so make sure you've loaded that first.
+Oden should work fine in both Node.js and browsers. It supports AMD, Node-style module exports, and plain old in-browser globals. Its only dependency is Underscore.js (lodash coming soon!), so make sure you've loaded that first.
 
 For front end use:
 
