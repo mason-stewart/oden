@@ -2,6 +2,7 @@
   "name": "oden.js",
   "version": "0.0.2",
   "homepage": "https://github.com/masondesu/oden",
+  "description": "Accept iterators as the *first* argument on your favorite Underscore.js methods!",
   "author": {
     "name": "Mason Stewart"
   },
