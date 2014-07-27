@@ -36,6 +36,7 @@
     "jshint-stylish": "~0.1.5",
     "coveralls": "*",
     "istanbul": "*",
+    "mocha": "*",
     "mocha-lcov-reporter": "*"
   }
 }
