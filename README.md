@@ -1,10 +1,9 @@
 # Oden.js
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url]  [![Coverage Status][coveralls-image]][coveralls-url] [![Dependency Status][depstat-image]][depstat-url] [![Dependency Status][depstat-dev-image]][depstat-dev-url] 
 
-## Accept iterators as the *first* argument on your favorite Underscore.js methods!
+> Accept iterators as the *first* argument on your favorite Underscore.js methods!
 
 !["Mmmmmmmmm.... Oden!"](http://www.nihonsun.com/wp-content/uploads/2008/11/image11.png)
-
-[![Build Status](https://secure.travis-ci.org/masondesu/oden.png?branch=master)](http://travis-ci.org/masondesu/oden)
 
 Ever wish you could provide the iterator as the first argument to Underscore's `map` method? Now you can with Oden.js. It's as easy as:
 
@@ -126,3 +125,17 @@ Image credit: [Nihon Sun](http://www.nihonsun.com/2008/11/20/an-ode-to-oden-comf
 Oden.js is licensed under the The MIT License (MIT)
 
 Copyright (c) 2014 [Mason Stewart](https://twitter.com/masondesu) See [LICENSE](https://github.com/masondesu/oden/blob/master/LICENSE) for more details.
+
+[npm-url]: https://npmjs.org/package/oden.js
+[npm-image]: https://badge.fury.io/js/oden.js.png
+
+[travis-url]: http://travis-ci.org/masondesu/oden
+[travis-image]: https://secure.travis-ci.org/masondesu/oden.png?branch=master
+
+[coveralls-url]: https://coveralls.io/r/masondesu/oden
+[coveralls-image]: https://coveralls.io/repos/masondesu/oden/badge.png
+
+[depstat-url]: https://david-dm.org/masondesu/oden
+[depstat-image]: https://david-dm.org/masondesu/oden.png
+[depstat-dev-url]: https://david-dm.org/masondesu/oden#info=devDependencies
+[depstat-dev-image]: https://david-dm.org/masondesu/oden/dev-status.png
